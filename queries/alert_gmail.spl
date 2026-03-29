@@ -1,0 +1,8 @@
+index=security sourcetype=linux_secure "sshd" "Failed password"
+| rex field=_raw "(?i)from\s+(?<src_ip>\d{1,3}(?:\.\d{1,3}){3})"
+| eval ip=coalesce(src, src_ip)
+| rex field=_raw "message repeated\s+(?<rep>\d+)\s+times"
+| eval attempts = coalesce(rep,0) + 1
+| stats sum(attempts) as attempts by ip
+| where attempts >= 3
+| sort -attempts
