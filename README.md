@@ -72,6 +72,7 @@ El dashboard **PRE-DASHBOARD** centraliza la visibilidad del entorno en tiempo r
 ![Dashboard Splunk](images/dashboard.png)
 
 Versión con pequeñas mejoras visuales:
+
 <img width="1871" height="990" alt="image" src="https://github.com/user-attachments/assets/8ab1d87e-14e7-4436-b2d6-15133a3c8659" />
 <img width="1881" height="1025" alt="image" src="https://github.com/user-attachments/assets/f4ded58f-6ad4-42af-bb7d-11fc8ca76949" />
 
